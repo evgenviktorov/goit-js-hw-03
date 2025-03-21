@@ -1,6 +1,12 @@
 console.log('-- task-2 --');
 
-// ==============
+function makeArray(firstArray, secondArray, maxLength) {
+  const fullArray = firstArray.concat(secondArray);
+  const lenFullArray = fullArray.length;
+  if (lenFullArray > maxLength) {
+    return fullArray.splice(0, maxLength);
+  } else return fullArray;
+}
 
 // ==============
 
