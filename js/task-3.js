@@ -1,6 +1,14 @@
 console.log('-- task-3 --');
 
-// ==============
+function filterArray(numbers, value) {
+  let goodArrayNumbers = [];
+  for (let itemNumbers of numbers) {
+    if (itemNumbers > value) {
+      goodArrayNumbers.push(itemNumbers);
+    }
+  }
+  return goodArrayNumbers;
+}
 
 // ==============
 
