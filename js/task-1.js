@@ -1,6 +1,11 @@
-// ==============
+console.log('-- task-1 --');
 
-// ==============
+function slugify(title) {
+  const lowerCaseTitle = title.toLowerCase();
+  const arrTitle = lowerCaseTitle.split(' ');
+  const slug = arrTitle.join('-');
+  return slug;
+}
 
 // ==============
 
